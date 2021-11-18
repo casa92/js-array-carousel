@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- MILESTONE 1
+    Per prima cosa, creiamo il markup statico: costruiamo il container e inseriamo l'immagine grande a sinistra e le thumbnails sulla destra in modo da poter stilare lo slider; avremo così la struttura base e gli stili pronti per poterci poi concentrare solamente sull'aspetto logico. -->
+
+    <div class="app_container">
+        <div class="slider">
+            <!-- big image -->
+            <div class="big_image_container">
+                <div class="single_big_image">
+                    <img src="img/01.jpg" alt="1">
+                    <!-- text big image -->
+                    <div class="image_text active">
+                        <div class="title">
+                            <h2>Svizzera</h2>
+                        </div>
+                        <div class="text">
+                            Lorem ipsum
+                        </div>
+                    </div>
+                </div>
+                <div class="single_big_image active">
+                    <img src="img/02.jpg" alt="1">
+                </div>
+                <div class="single_big_image">
+                    <img src="img/03.jpg" alt="1">
+                </div>
+                <div class="single_big_image">
+                    <img src="img/04.jpg" alt="1">
+                </div>
+                <div class="single_big_image">
+                    <img src="img/05.jpg" alt="1">
+                </div>
+                <!-- text big image -->
+                <div class="image_text active">
+                    <div class="title">
+                        <h2>Svizzera</h2>
+                    </div>
+                    <div class="text">
+                        Lorem ipsum
+                    </div>
+                </div>
+            </div>
+            <!-- image gallery -->
+            <div class="image_selection">
+                <div class="single_selection_image">
+                    <img src="img/01.jpg" alt="">
+                </div>
+                <div class="single_selection_image active">
+                    <img src="img/02.jpg" alt="">
+                </div>
+                <div class="single_selection_image">
+                    <img src="img/03.jpg" alt="">
+                </div>
+                <div class="single_selection_image">
+                    <img src="img/04.jpg" alt="">
+                </div>
+                <div class="single_selection_image">
+                    <img src="img/05.jpg" alt="">
+                </div>
+                <div class="arrow arrow_top">
+                    <i class="fas fa-angle-up"></i>
+                </div>
+                <div class="arrow arrow_bottom">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

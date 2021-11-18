@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*COMMON*/
+.app_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+/*SLIDER*/
+.slider {
+    width: 70%;
+    height: 60%;
+    background-color: burlywood;
+}
+/*big image container*/
+.big_image_container {
+    width: 80%;
+    height: 100%;
+    background-color: chocolate;
+    float: left;
+    position: relative;
+}
+.single_big_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    position: relative;
+}
+.single_big_image.active {
+    display: block;
+}
+.single_big_image img{
+    width: 100%;
+    height: 100%;
+}
+.image_text {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    display: none;
+    text-align: right;
+    width: 90%;
+}
+.image_text.active {
+    display: block;
+}
+.image_text .text {
+    font-size: 20px;
+}
+/*image selection*/
+.image_selection {
+    width: 20%;
+    height: 100%;
+    background-color: coral;
+    float: left;
+    position: relative;
+    overflow-y:hidden;
+}
+/* .single_selection_image {
+    width: 100%;
+    height: calc( 100% / 5 );
+    filter: grayscale(0.7);
+}
+.single_selection_image.active {
+    filter: grayscale(0);
+    border: 3px solid #dbdadf;
+} */
+.single_selection_image {
+    width: 100%;
+    height: calc( 100% / 5 );
+    position: relative;
+}
+.single_selection_image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.single_selection_image.active {
+    border: 3px solid #dbdadf;
+}
+.single_selection_image.active::after {
+    display: none;
+}
+.single_selection_image img {
+    width: 100%;
+    height: 100%;
+}
+.arrow {
+    font-size: 35px;
+    color: #4d4d4d;
+    width: 35px;
+    height: 35px;
+    background-color: #cbcbcb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate( -50% );
+    z-index: 2;
+}
+.arrow_top {
+    top: 5px;
+}
+.arrow_bottom {
+    bottom: 5px;
+}
