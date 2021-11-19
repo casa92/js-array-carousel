@@ -40,7 +40,7 @@ for( let i = 0; i < items.length; i++ )  {
 
     let newImage = `
     <div class="single_big_image">
-        <img src="${thisPath}" alt="img ${i}">
+        <img src="${thisPath}" alt="img ${thisTitle}">
         <div class="image_text">
             <div class="title">
                 <h2>${thisTitle}</h2>
@@ -56,7 +56,7 @@ for( let i = 0; i < items.length; i++ )  {
 
     let thumbList = `
     <div class="single_selection_image">
-        <img src="${thisPath}" alt="img ${i}">
+        <img src="${thisPath}" alt="img ${thisTitle}">
     </div>
     `;
 
